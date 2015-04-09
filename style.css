@@ -59,11 +59,25 @@ body {
   -webkit-justify-content: center;
   justify-content: center; }
   #javascript #content {
-    width: 600px;
+    width: 800px;
     margin: 50px 0px 10px 0px;
     background-color: rgba(56, 59, 68, 0.2);
     padding: 20px;
     color: #FFF; }
+    #javascript #content ul {
+      list-style-type: none;
+      margin: 0;
+      margin-top: 15px; }
+      #javascript #content ul li {
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        padding: 10px; }
+      #javascript #content ul a {
+        text-decoration: none;
+        width: 300px;
+        padding: 25px;
+        color: #FFF; }
   #javascript #button_section {
     margin: 10px 0px; }
 

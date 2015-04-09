@@ -74,11 +74,30 @@ background-image: url("http://i.imgur.com/QIsyoBn.jpg");
    -webkit-justify-content: center;
    justify-content: center;
  	& #content{
- 		width: 600px;
+ 		width: 800px;
  		margin: 50px 0px 10px 0px;
  		background-color: rgba(56, 59, 68, .2);
  		padding: 20px;
  		color: #FFF;
+ 		& ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 15px;
+    
+    & li{
+    display: -webkit-flex;
+   	display: flex;
+    align-items: center;
+    padding: 10px;
+    
+			}
+			& a{
+				text-decoration: none;
+				width: 300px;
+				padding: 25px;
+				color: #FFF;
+			}
+		}
  	};
  	& #button_section{
  		margin: 10px 0px;
