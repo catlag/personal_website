@@ -1,29 +1,55 @@
 body {
-  margin: 0px; }
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("http://i.imgur.com/QIsyoBn.jpg");
+  background-attachment: fixed;
+  background-position: center; }
 
-#navigation, #footer {
-  background-color: #D8D8D8;
+#navigation {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 61%, rgba(0, 0, 0, 0.5) 70%, transparent 100%);
   width: 100%;
-  height: 75px; }
+  height: 50px;
+  position: fixed; }
+  #navigation ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; }
+    #navigation ul li {
+      display: inline;
+      padding: 5px; }
+    #navigation ul a {
+      text-decoration: none;
+      color: #FFF; }
 
 #hero {
-  background-color: blue; }
+  background-image: url("http://i.imgur.com/Sjzqdl1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #hero .name {
+    font-size: 150px;
+    color: #FFF; }
 
 #columns {
-  height: 350px;
-  background-color: pink;
+  height: auto;
+  background-color: #d0bcd6;
   display: flex;
   justify-content: center; }
   #columns .section {
-    background-color: red;
-    width: 200px;
+    background-color: rgba(56, 59, 68, 0.2);
+    color: #FFF;
+    padding: 10px;
+    width: 300px;
     height: auto;
     margin: 50px 20px; }
 
-.javascript {
+#javascript {
   height: auto;
-  background-color: yellow;
-  display: flex;
+  background-color: rgba(208, 188, 214, 0.2);
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -32,19 +58,50 @@ body {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center; }
-  .javascript #content {
+  #javascript #content {
+    width: 600px;
     margin: 50px 0px 10px 0px;
-    background-color: red;
-    padding: 20px; }
-  .javascript #click {
+    background-color: rgba(56, 59, 68, 0.2);
+    padding: 20px;
+    color: #FFF; }
+  #javascript #button_section {
     margin: 10px 0px; }
 
-.personal {
-  height: 500px;
-  background-color: red; }
+#divider {
+  border-bottom: solid 1px #9397B2;
+  margin-top: 25px;
+  width: 800px; }
 
-.footer {
+#personal {
   height: 500px;
-  background-color: purple; }
+  background-color: rgba(208, 188, 214, 0.2);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+#footer {
+  height: 50px;
+  display: flex;
+  justify-content: center; }
+  #footer #top {
+    width: 900px;
+    border-top: solid 1px #9397B2; }
+  #footer ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; }
+    #footer ul li {
+      display: inline;
+      padding: 5px; }
+    #footer ul a {
+      text-decoration: none;
+      color: #FFF; }
 
 /*# sourceMappingURL=style.css.map */
