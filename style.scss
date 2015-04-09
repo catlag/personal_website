@@ -73,7 +73,7 @@ background-image: url("http://i.imgur.com/QIsyoBn.jpg");
    align-items: center;
    -webkit-justify-content: center;
    justify-content: center;
- 	& #content{
+ 		& #content{
  		width: 800px;
  		margin: 50px 0px 10px 0px;
  		background-color: rgba(56, 59, 68, .2);
@@ -91,6 +91,7 @@ background-image: url("http://i.imgur.com/QIsyoBn.jpg");
     padding: 10px;
     
 			}
+			
 			& a{
 				text-decoration: none;
 				width: 300px;
@@ -99,11 +100,20 @@ background-image: url("http://i.imgur.com/QIsyoBn.jpg");
 			}
 		}
  	};
+ 	& h1{
+ 		position: relative;
+ 		margin: 0;
+ 		padding: 0;
+ 	}
  	& #button_section{
  		margin: 10px 0px;
 
  	}
  };
+
+ .vidId{
+				visibility: none;
+			}
 
  #divider{
    	border-bottom: solid 1px #9397B2;
@@ -113,6 +123,7 @@ background-image: url("http://i.imgur.com/QIsyoBn.jpg");
 
  #personal{
  	height: 500px;
+ 	padding: 50px 0;
  	background-color: rgba(208, 188, 214, .2);
  	display: -webkit-flex;
    display: flex;

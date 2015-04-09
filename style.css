@@ -78,8 +78,15 @@ body {
         width: 300px;
         padding: 25px;
         color: #FFF; }
+  #javascript h1 {
+    position: relative;
+    margin: 0;
+    padding: 0; }
   #javascript #button_section {
     margin: 10px 0px; }
+
+.vidId {
+  visibility: none; }
 
 #divider {
   border-bottom: solid 1px #9397B2;
@@ -88,6 +95,7 @@ body {
 
 #personal {
   height: 500px;
+  padding: 50px 0;
   background-color: rgba(208, 188, 214, 0.2);
   display: -webkit-flex;
   display: flex;
