@@ -23,17 +23,33 @@ body {
  	& .section{
  		background-color: red;
  		width: 200px;
- 		height: 200px;
+ 		height: auto;
  		margin: 50px 20px;
  	}
 
  };
 
  .javascript{
- 	height: 500px;
+ 	height: auto;
  	background-color: yellow;
+ 	display: flex;
+ 	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+ 	& #content{
+ 		margin: 50px 0px 10px 0px;
+ 		background-color: red;
+ 		padding: 20px;
+ 	};
+ 	& #click{
+ 		margin: 10px 0px 
 
-
+ 	}
  };
 
  .personal{
