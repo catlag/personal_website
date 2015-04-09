@@ -2,6 +2,7 @@ body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
   background-image: url("http://i.imgur.com/QIsyoBn.jpg");
+  color: #FFF;
   background-attachment: fixed;
   background-position: center; }
 
@@ -71,6 +72,9 @@ body {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center; }
+  #javascript #section_intro {
+    margin-top: 70px;
+    border-bottom: solid 1px #9397B2; }
   #javascript #content {
     width: 800px;
     margin: 50px 0px 10px 0px;

@@ -2,6 +2,7 @@ body {
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
 	background-image: url("http://i.imgur.com/QIsyoBn.jpg");
+	color: #FFF;
  	background-attachment: fixed;
   background-position: center;
 }
@@ -82,13 +83,17 @@ body {
  	height: auto;
  	background-color: rgba(208, 188, 214, .2);
  	display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  	& #section_intro{
+  		margin-top: 70px;
+  		border-bottom: solid 1px #9397B2;
+  	}
  		& #content{
  		width: 800px;
  		margin: 50px 0px 10px 0px;
