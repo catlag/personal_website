@@ -1,9 +1,7 @@
-$('.arrow').click(function(){
-location.reload();
-});
 
-var width = 1000,
-    height = 1000,
+
+var width = 700,
+    height = 700,
     radius = Math.min(width, height) / 2,
     innerRadius = 0.3 * radius;
 
@@ -37,8 +35,10 @@ var svg = d3.select("#myChart").append("svg")
 
 
 d3.csv('experience.csv', function(error, data) {
-	
-		console.log(error);
+  console.log("data")
+	console.log(data);
+
+	console.log(error);
 
   data.forEach(function(d) {
     d.id     =  d.id;
@@ -57,7 +57,7 @@ d3.csv('experience.csv', function(error, data) {
     .enter().append("path")
       .attr("fill", function(d) { return d.data.color; })
       .attr("class", "solidArc")
-      .attr("stroke", "black")
+      .attr("stroke", "none")
       .attr("d", arc)
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide);
@@ -66,7 +66,7 @@ d3.csv('experience.csv', function(error, data) {
       .data(pie(data))
     .enter().append("path")
       .attr("fill", "none")
-      .attr("stroke", "black")
+      .attr("stroke", "none")
       .attr("class", "outlineArc")
       .attr("d", outlineArc);  
 
@@ -76,9 +76,9 @@ d3.csv('experience.csv', function(error, data) {
     "hello";
 
   svg.append("svg:text")
-    .attr("class", "aster-score")
+    .attr("class", "title")
     .attr("dy", ".45em")
-    .attr("fill", "white")
+    .attr("fill", "black")
     .attr("text-anchor", "middle") // text-align: right
     .text("Skills");
 

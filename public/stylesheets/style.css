@@ -2,9 +2,10 @@ body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
   background-color: #F5F3F3;
-  color: #FFF;
-  background-attachment: fixed;
-  background-position: center; }
+  background-image: url("/assets/hexagon_bottom.svg");
+  background-position: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 #navigation {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 61%, rgba(0, 0, 0, 0.5) 70%, transparent 100%);
@@ -94,17 +95,14 @@ body {
     width: auto;
     margin: 35px; }
 
-.vidId {
-  visibility: none; }
-
 #divider {
   border-bottom: solid 1px #000;
-  margin-top: 25px;
-  width: 800px; }
+  margin: 65px 0;
+  width: 500px; }
 
 #personal {
   height: 500px;
-  padding: 50px 0;
+  padding: 80px 0;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -114,13 +112,75 @@ body {
   -webkit-justify-content: center;
   justify-content: center; }
 
+text {
+  font: 5px sans-serif; }
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+
+axis path,
+.axis line {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges; }
+
+.bar {
+  fill: orange; }
+
+.solidArc:hover {
+  fill: orangered; }
+
+.solidArc {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.x.axis path {
+  display: none; }
+
+.aster-score {
+  line-height: 1;
+  font-size: 200%;
+  font-family: 'Raleway', sans-serif; }
+
+.d3-tip {
+  line-height: 2;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  border-radius: 2px; }
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.5);
+  content: "\25BC";
+  position: absolute;
+  text-align: center; }
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0; }
+
 #footer {
-  height: 50px;
+  margin-top: 40px;
+  height: 150px;
   display: flex;
   justify-content: center; }
-  #footer #top {
-    width: 900px;
-    border-top: solid 1px #9397B2; }
+  #footer #links {
+    width: 800px;
+    border-top: solid 1px #fff; }
   #footer ul {
     list-style-type: none;
     margin: 0;
@@ -135,13 +195,21 @@ body {
       color: #FFF; }
 
 #bottom {
-  position: relative; }
-  #bottom img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1; }
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+#linkedin {
+  height: 200px auto;
+  background-color: pink;
+  background-image: url("/assets/linkedin.svg"); }
+
+#email {
+  background-image: url("/assets/email.svg"); }
 
 /*# sourceMappingURL=style.css.map */

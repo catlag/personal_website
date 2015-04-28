@@ -230,8 +230,8 @@
 
     function initNode() {
       var node = d3.select(document.createElement('div'))
-      console.log("hello")
-      console.log(node);
+      // console.log("hello")
+      // console.log(node);
       node.style({
         position: 'absolute',
         top: 0,
