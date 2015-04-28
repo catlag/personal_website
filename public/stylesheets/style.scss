@@ -1,0 +1,238 @@
+body {
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #F5F3F3;
+	color: #FFF;
+ 	background-attachment: fixed;
+  background-position: center;
+}
+
+
+	#navigation {
+		background: linear-gradient(to bottom, rgba(0,0,0,0.65) 61%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0) 100%);
+		width:100%;
+		height: 70px;
+		position: fixed;
+		& ul {
+    list-style-type: none;
+    float: right;
+    margin: 15px 80px 0 0;
+   
+    & li{
+    display: inline;
+    padding: 5px;
+			}
+			& a{
+				text-decoration: none;
+				color: #FFF;
+			}
+		}
+		& #logo{
+			float: left;
+			margin: 10px 0 0 40px;
+		}
+		& #planet{
+			height: 40px;
+			width: auto;
+		}
+	}
+
+
+ #hero{	
+ 	background-image: url("/assets/hexagon_top.svg");
+ 	background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  & .name{
+    text-align: center;
+  	font-size: 150px;
+  	color: #FFF;
+  }
+
+ };
+
+ .title{
+   font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #000;
+ }
+
+ #columns{
+ 	height: auto;
+ 	background-color: #CBFFF3;
+ 	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & .title{
+    margin-top: 25px;
+  }
+  & #aboutMe{
+    display: flex;
+    justify-content: center;
+  }
+ 	& .section{
+ 		background-color: rgba(56, 59, 68, .2);
+ 		color: #FFF;
+ 		padding: 10px;
+ 		width: 300px;
+ 		height: auto;
+ 		margin: 50px 20px;
+ 		}
+ 	& h1, p {
+ 		display: inline;
+ 	}
+ 	& a{
+ 		display: flex;
+ 		justify-content: center;
+ 	}
+ 	& #nasa{
+ 		margin-top: 20px;
+ 		height: 100px;
+ 		width: auto;
+ 	}
+ };
+
+ #javascript{
+ 	height: auto;
+ 	// background-color: rgba(208, 188, 214, .2);
+ 	display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  // -webkit-justify-content: center;
+  // justify-content: center;
+  & #row1, #row2{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  // margin: 25px;
+  }
+  & img{
+    height: 250px;
+    width: auto;
+    margin: 35px;
+  }
+
+  // 	& #section_intro{
+  // 		margin-top: 70px;
+  // 		border-bottom: solid 1px #9397B2;
+  // 	}
+ 	// 	& #content{
+ 	// 	width: 800px;
+ 	// 	margin: 50px 0px 10px 0px;
+ 	// 	background-color: rgba(56, 59, 68, .2);
+ 	// 	padding: 20px;
+ 	// 	color: #000;
+ 	// 	& ul {
+  //   list-style-type: none;
+  //   margin: 0;
+  //   margin-top: 15px;
+    
+  //   & li{
+  //   display: -webkit-flex;
+  //  	display: flex;
+  //   align-items: center;
+  //   padding: 10px;
+    
+		// 	}
+			
+		// 	& a{
+		// 		text-decoration: none;
+		// 		width: 300px;
+		// 		padding: 25px;
+		// 		color: #FFF;
+		// 	}
+		// }
+ 	// };
+ 	// & h1{
+ 	// 	position: relative;
+ 	// 	margin: 0;
+ 	// 	padding: 0;
+ 	// }
+ 	// & #button_section{
+ 	// 	margin: 10px 0px;
+
+ 	// };
+ 	// & #more_videos{
+ 	// 	height: 80px;
+ 	// 	width: 120px;
+ 	// 	// background: rgba(0, 7, 7, 0.2);
+ 	// 	border: solid 1px #9397B2;
+ 	// 	font-family: 'Roboto', sans-serif;
+		// color: #FFF;
+ 	// 	font-size: 20px;
+ 	// }
+
+ };
+
+ .vidId{
+				visibility: none;
+			}
+
+ #divider{
+   	border-bottom: solid 1px #000;
+   	margin-top: 25px;
+   	width: 800px
+   }
+
+ #personal{
+ 	height: 500px;
+ 	padding: 50px 0;
+ 	// background-color: rgba(208, 188, 214, .2);
+ 	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+
+ };
+
+ #footer{
+ 	height: 50px;
+ 	display: flex;
+ 	justify-content: center;
+ 	& #top{
+ 		width: 900px;
+ 		border-top: solid 1px #9397B2;
+ 	}
+	& ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 15px;
+    display: flex;
+ 		justify-content: center;
+    & li{
+    display: inline;
+    padding: 5px;
+    
+			}
+			& a{
+				text-decoration: none;
+				color: #FFF;
+			}
+		}
+ };
+
+ #bottom{
+ position: relative;
+& img{
+   position: absolute;
+    width: 100%;
+    height: 100%;
+     left: 0;
+    bottom: 0;
+
+    z-index: -1;
+  }
+}
