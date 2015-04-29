@@ -76,12 +76,13 @@ body {
     justify-content: center;
   }
  	& .section{
- 		background-color: rgba(56, 59, 68, .2);
- 		color: #FFF;
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+ 		color: #000;
  		padding: 10px;
  		width: 300px;
  		height: auto;
- 		margin: 50px 20px;
+ 		margin: 30px 80px;
  		}
  	& h1, p {
  		display: inline;
@@ -128,7 +129,7 @@ body {
  #divider{
    	border-bottom: solid 1px #000;
    	margin: 65px 0;
-   	width: 500px
+   	width: 400px
    }
 
  #personal{
@@ -220,7 +221,17 @@ axis path,
   left: 0;
 }
 
+ #bottom{
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
 
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+};
 
 
  #footer{
@@ -231,44 +242,22 @@ axis path,
  	& #links{
  		width: 800px;
  		border-top: solid 1px #fff;
- 	}
-	& ul {
-    list-style-type: none;
-    margin: 0;
-    margin-top: 15px;
     display: flex;
- 		justify-content: center;
-    & li{
-    display: inline;
-    padding: 5px;
-    
-			}
-			& a{
-				text-decoration: none;
-				color: #FFF;
-			}
-		}
+    justify-content: space-around;
+ 	}
+	& div{
+    margin-top: 35px;
+  }
  };
 
- #bottom{
-  display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-}
 
- #linkedin{
-  height: 200px auto;
-  background-color:pink;
-  background-image: url("/assets/linkedin.svg")
-};
+// #linkedin{
+//   background-image: url("/assets/linkedin.svg");
+//   background-size: auto;
+// };
 
-#email{
-   background-image: url("/assets/email.svg")
-};
+// #email{
+//    background-image: url("/assets/email.svg")
+// };
 
 

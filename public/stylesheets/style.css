@@ -59,12 +59,13 @@ body {
     display: flex;
     justify-content: center; }
   #columns .section {
-    background-color: rgba(56, 59, 68, 0.2);
-    color: #FFF;
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    color: #000;
     padding: 10px;
     width: 300px;
     height: auto;
-    margin: 50px 20px; }
+    margin: 30px 80px; }
   #columns h1, #columns p {
     display: inline; }
   #columns a {
@@ -98,7 +99,7 @@ body {
 #divider {
   border-bottom: solid 1px #000;
   margin: 65px 0;
-  width: 500px; }
+  width: 400px; }
 
 #personal {
   height: 500px;
@@ -173,27 +174,6 @@ axis path,
   top: 100%;
   left: 0; }
 
-#footer {
-  margin-top: 40px;
-  height: 150px;
-  display: flex;
-  justify-content: center; }
-  #footer #links {
-    width: 800px;
-    border-top: solid 1px #fff; }
-  #footer ul {
-    list-style-type: none;
-    margin: 0;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center; }
-    #footer ul li {
-      display: inline;
-      padding: 5px; }
-    #footer ul a {
-      text-decoration: none;
-      color: #FFF; }
-
 #bottom {
   display: -webkit-flex;
   display: flex;
@@ -204,12 +184,17 @@ axis path,
   -webkit-justify-content: center;
   justify-content: center; }
 
-#linkedin {
-  height: 200px auto;
-  background-color: pink;
-  background-image: url("/assets/linkedin.svg"); }
-
-#email {
-  background-image: url("/assets/email.svg"); }
+#footer {
+  margin-top: 40px;
+  height: 150px;
+  display: flex;
+  justify-content: center; }
+  #footer #links {
+    width: 800px;
+    border-top: solid 1px #fff;
+    display: flex;
+    justify-content: space-around; }
+  #footer div {
+    margin-top: 35px; }
 
 /*# sourceMappingURL=style.css.map */
