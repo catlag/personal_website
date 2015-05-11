@@ -7,6 +7,8 @@ $(document).ready(function(){
 
 	$('#hero').css("height", winY);
 	$('#columns').css("height", winY);
+	$('#javascript').css("height", winY);
+
 // 	$.ajax({
 //   url: "https://www.googleapis.com/youtube/v3/search?part=snippet"
 //   									+"&q=astronomy|planets"
@@ -75,10 +77,22 @@ $(document).ready(function(){
 // })
 });
 
-$('#arrow').click(function(){
+$('#arrow1').click(function(){
 	alert("clicked!!!");
 	   $('html, body').animate({
         scrollTop: $("#columns").offset().top
+    }, 1000);
+	});
+$('#arrow2').click(function(){
+	alert("clicked!!!");
+	   $('html, body').animate({
+        scrollTop: $("#javascript").offset().top
+    }, 1000);
+	});
+$('#arrow3').click(function(){
+	alert("clicked!!!");
+	   $('html, body').animate({
+        scrollTop: $("#bottom").offset().top
     }, 1000);
 	});
 console.log("hello")

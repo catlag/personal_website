@@ -1,7 +1,7 @@
 
 
-var width = 700,
-    height = 700,
+var width = 550,
+    height = 550,
     radius = Math.min(width, height) / 2,
     innerRadius = 0.3 * radius;
 
@@ -77,10 +77,10 @@ d3.csv('experience.csv', function(error, data) {
 
   svg.append("svg:text")
     .attr("class", "title")
-    .attr("dy", ".45em")
+    .attr("dy", ".35em")
     .attr("fill", "black")
     .attr("text-anchor", "middle") // text-align: right
-    .text("Skills");
+    .text("skills");
 
 });
 
