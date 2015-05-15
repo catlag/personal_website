@@ -1,5 +1,92 @@
-@media only screen and (max-width: 400px) {
-	body{
-		color: blue;
+@media only screen and (max-width: 1000px) {
+	
+	#hero{
+		background-size: cover;
+		background-repeat: no-repeat;
+		& #name{
+			font-size: 200px;
+			margin-top: 400px;
+		}
+		#arrow1{
+			margin-bottom: 200px;
+			& img{
+				height: 80px;
+				width: auto;
+			}
+		}
 	}
+
+	#columns{
+
+  	& .title{
+  		font-size: 80px;
+  	}	
+  	#arrow2{
+  		margin-top: 20px;
+  		margin-bottom: 20px;
+  		& img{
+  			height: 80px;
+  			width: auto;
+  		}
+  	}	
+	}
+
+	#javascript{
+		& .title{
+    margin: 50px 0 30px 0;
+    font-size: 80px;
+  	}
+		& #row1, #row2{
+		margin: 0 75px;
+	  display: -webkit-flex;
+	  display: flex;
+	  -webkit-flex-direction: column;
+	  flex-direction: column;
+	  -webkit-align-items: stretch;
+	  align-items: stretch;
+	  }
+	    & img{
+    width: 100%;
+    height: auto;    
+  	}
+	   & .projectImg{
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    
+  	}
+  	#sketchphrase{
+  	margin-top: 200px;
+ 	 }
+	}
+
+	#arrow3{
+		display: inline;
+		margin: 10px auto 20px auto;
+		& img{
+				height: 80px;
+				width: auto;
+			}
+	}
+
+	#arrow4{
+
+		margin: 10px auto 20px auto;
+		& img{
+				height: 80px;
+				width: auto;
+			}
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+

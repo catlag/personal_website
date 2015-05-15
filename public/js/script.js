@@ -7,17 +7,17 @@ $(document).ready(function(){
 
 	$('#hero').css("height", winY);
 	$('#columns').css("height", winY);
-	$('#javascript').css("height", winY);
+	// $('#javascript').css("height", winY);
 });
 
 $(".projectImg").hover(function(){
-	$(this).find('p').animate({
+	$(this).find('div').animate({
     opacity: 1,
   }, 1000, function() {
     console.log("complete")
   })
 },function(){
-	$(this).find('p').animate({
+	$(this).find('div').animate({
     opacity: 0,
   }, 1000, function() {
     console.log("complete")
@@ -36,6 +36,11 @@ $('#arrow2').click(function(){
     }, 1000);
 	});
 $('#arrow3').click(function(){
+     $('html, body').animate({
+        scrollTop: $("#row2").offset().top
+    }, 1000);
+  });
+$('#arrow4').click(function(){
 	   $('html, body').animate({
         scrollTop: $("#bottom").offset().top
     }, 1000);

@@ -1,5 +1,57 @@
-@media only screen and (max-width: 400px) {
-  body {
-    color: blue; } }
+@media only screen and (max-width: 1000px) {
+  #hero {
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #hero #name {
+      font-size: 200px;
+      margin-top: 400px; }
+    #hero #arrow1 {
+      margin-bottom: 200px; }
+      #hero #arrow1 img {
+        height: 80px;
+        width: auto; }
+
+  #columns .title {
+    font-size: 80px; }
+  #columns #arrow2 {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    #columns #arrow2 img {
+      height: 80px;
+      width: auto; }
+
+  #javascript .title {
+    margin: 50px 0 30px 0;
+    font-size: 80px; }
+  #javascript #row1, #javascript #row2 {
+    margin: 0 75px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    align-items: stretch; }
+  #javascript img {
+    width: 100%;
+    height: auto; }
+  #javascript .projectImg {
+    width: 100%;
+    height: auto;
+    margin: 50px 0; }
+  #javascript #sketchphrase {
+    margin-top: 200px; }
+
+  #arrow3 {
+    display: inline;
+    margin: 10px auto 20px auto; }
+    #arrow3 img {
+      height: 80px;
+      width: auto; }
+
+  #arrow4 {
+    margin: 10px auto 20px auto; }
+    #arrow4 img {
+      height: 80px;
+      width: auto; } }
 
 /*# sourceMappingURL=media.css.map */
