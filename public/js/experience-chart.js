@@ -1,9 +1,25 @@
+var width;
+var height;
 
+$(function() {
+    if(parseInt(screen.width) < 1000) {
+        // $.getSscript("js/menu-collapser.js");
+      width = 900;
+      height = 900;
+      // radius = Math.min(width, height) / 2,
+      // innerRadius = 0.3 * radius;
+    } else {
+      width = 550;
+      height = 550;
+    }
+      // radius = Math.min(width, height) / 2,
+      // innerRadius = 0.3 * radius;
+});
 
-var width = 550,
-    height = 550,
-    radius = Math.min(width, height) / 2,
-    innerRadius = 0.3 * radius;
+// var width = 550,
+//     height = 550,
+var radius = Math.min(width, height) / 2;
+var innerRadius = 0.3 * radius;
 
 var pie = d3.layout.pie()
     .sort(null)

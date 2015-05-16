@@ -7,7 +7,13 @@ $(document).ready(function(){
 
 	$('#hero').css("height", winY);
 	$('#columns').css("height", winY);
-	// $('#javascript').css("height", winY);
+  if(parseInt(screen.width) < 1000) {
+	 $('#row1').css("height", winY);
+   $('#row2').css("height", winY);
+   $('#bottom').css("height", winY);
+    }else{
+      $('#javascript').css("height", winY);
+    };
 });
 
 $(".projectImg").hover(function(){
