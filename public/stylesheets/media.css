@@ -54,6 +54,46 @@
       width: auto; }
 
   .aster-score {
-    font-size: 50%; } }
+    font-size: 50%; }
+
+  .d3-tip {
+    font-size: 2em;
+    padding: .5em; }
+
+  /* Creates a small triangle extender for the tooltip */
+  .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.5);
+    content: "\25BC";
+    position: absolute;
+    text-align: center; }
+
+  #bottom {
+    margin-top: 2em;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+
+  #footer {
+    margin-top: 20px;
+    height: 130px;
+    display: flex;
+    justify-content: center; }
+    #footer #links {
+      width: 800px;
+      border-top: solid 1px #fff;
+      display: flex;
+      justify-content: space-around; }
+    #footer div {
+      margin-top: 25px; } }
 
 /*# sourceMappingURL=media.css.map */

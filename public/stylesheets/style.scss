@@ -86,7 +86,7 @@ body {
  		color: #000;
  		width: 80%;
  		height: 60%;
- 		margin: 2em 80px;
+ 		margin: 0 80px;
     font-size: 1.5em;
  		}
  	& h1, p {
@@ -179,7 +179,7 @@ axis path,
 }
 
 .solidArc:hover {
-  fill: orangered ;
+  fill: rgba(0, 0, 0, 0.5) ;
 }
 
 .solidArc {
@@ -201,12 +201,13 @@ axis path,
 
 .d3-tip {
   line-height: 2;
-  font-size: 20px;
+  font-size: 50px;
   font-family: 'Raleway', sans-serif;
   padding: 18px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   border-radius: 2px;
+  z-index: 99;
 }
 
 /* Creates a small triangle extender for the tooltip */
