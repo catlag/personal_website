@@ -119,7 +119,7 @@ body {
 
 #arrow4 {
   display: block;
-  margin: 5em auto 2em auto; }
+  margin: 7em auto 0 auto; }
 
 text {
   font: 5px sans-serif; }
@@ -206,5 +206,12 @@ axis path,
     justify-content: space-around; }
   #footer div {
     margin-top: 25px; }
+  #footer a:link {
+    color: #fff;
+    text-decoration: none;
+    padding: 50% 0; }
+  #footer a:visited {
+    color: #fff;
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

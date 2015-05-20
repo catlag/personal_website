@@ -258,6 +258,16 @@ axis path,
 	& div{
     margin-top: 25px;
   }
+  & a:link {
+    color: #fff;
+    text-decoration: none;
+    padding: 50% 0;
+}
+
+  & a:visited {
+      color: #fff;
+      text-decoration: none;
+  }
  };
 
 
