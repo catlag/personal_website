@@ -10,33 +10,33 @@ body {
 };
 
 
-#navigation {
-		// background: linear-gradient(to bottom, rgba(0,0,0,0.65) 61%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0) 100%);
-		width:100%;
-		height: 70px;
-		position: fixed;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    & ul{
-      margin-top: 25px;
+// #navigation {
+// 		// background: linear-gradient(to bottom, rgba(0,0,0,0.65) 61%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0) 100%);
+// 		width:100%;
+// 		height: 70px;
+// 		position: fixed;
+//     display: -webkit-flex;
+//     display: flex;
+//     -webkit-justify-content: center;
+//     justify-content: center;
+//     & ul{
+//       margin-top: 25px;
 
-    }
-    & li{
-    background-color: rgba(0, 0, 0, 0.2);;
-    font-size: 20px;
-    display: inline;
-    padding: 10px ;
-    margin: 0 20px;
-			}
-			& a{
-				text-decoration: none;
-				color: #fff;
-        border-bottom: 1px solid #fff;
+//     }
+//     & li{
+//     background-color: rgba(0, 0, 0, 0.2);;
+//     font-size: 20px;
+//     display: inline;
+//     padding: 10px ;
+//     margin: 0 20px;
+// 			}
+// 			& a{
+// 				text-decoration: none;
+// 				color: #fff;
+//         border-bottom: 1px solid #fff;
 
-			}
-	}
+// 			}
+// 	}
 
 
 #hero{	
@@ -144,12 +144,13 @@ body {
   }
 }
 
-#arrow3{
+
+#arrow3, #arrow4, #arrow5{
   display: none;
-  margin: -80px auto 0 auto;
+  // margin: -80px auto 0 auto;
 }
 
-#arrow4{
+#arrow6{
   display: block;
   margin: 5em auto 2em auto;
 }
@@ -201,7 +202,7 @@ axis path,
 
 .d3-tip {
   line-height: 2;
-  font-size: 50px;
+  font-size: 2em;
   font-family: 'Raleway', sans-serif;
   padding: 18px;
   background: rgba(0, 0, 0, 0.5);
@@ -245,23 +246,36 @@ axis path,
 
 
 #footer{
-  margin-top: 20px;
- 	height: 130px;
- 	display: flex;
- 	justify-content: center;
- 	& #links{
- 		width: 800px;
+  margin-bottom: 3%;
+  width: 80%;
+ 	height: 20%;
+    display: flex;
+    -webkit-display: flex;
+    -webkit-flex-direction: row;
+   flex-direction: row;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+  & #footer > a{
+    display: none;
+  }
+ 	& #contact{
+ 		width: 80%;
  		border-top: solid 1px #fff;
     display: flex;
+    -webkit-display: flex;
     justify-content: space-around;
- 	}
-	& div{
-    margin-top: 25px;
+    webkit-justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 1.3em;
+
+ 	} & div{
+    margin-top: 3%;
   }
+
   & a:link {
     color: #fff;
     text-decoration: none;
-    padding: 50% 0;
 }
 
   & a:visited {
