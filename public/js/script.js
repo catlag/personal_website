@@ -8,8 +8,8 @@ $(document).ready(function(){
   //changes the height of sections based on screen width
 	$('#hero').css("height", winY);
   console.log("hero");
-  alert($('body').position().top);
-  alert($('body').position().left);
+  // alert($('body').position().top);
+  // alert($('body').position().left);
   // $('#hero').css("top", "0px");
   // $('#hero').css("left", "0px");
 	$('#columns').css("height", winY);
