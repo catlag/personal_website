@@ -1,23 +1,14 @@
-var width;
-var height;
+var width = 550;
+var height = 550;
 
 $(function() {
     if(parseInt(screen.width) < 1000) {
-        // $.getSscript("js/menu-collapser.js");
       width = 300;
       height = 300;
-      // radius = Math.min(width, height) / 2,
-      // innerRadius = 0.3 * radius;
-    } else {
-      width = 550;
-      height = 550;
-    }
-      // radius = Math.min(width, height) / 2,
-      // innerRadius = 0.3 * radius;
+    } 
 });
 
-// var width = 550,
-//     height = 550,
+
 var radius = Math.min(width, height) / 2;
 var innerRadius = 0.3 * radius;
 
