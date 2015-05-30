@@ -1,13 +1,10 @@
 var width = 550;
 var height = 550;
 
-$(function() {
-    if(parseInt(screen.width) < 1000) {
-      width = 300;
-      height = 300;
-    } 
-});
-
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  width = 300;
+  height = 300;
+}
 
 var radius = Math.min(width, height) / 2;
 var innerRadius = 0.3 * radius;
@@ -16,10 +13,14 @@ var pie = d3.layout.pie()
     .sort(null)
     .value(function(d) { return d.width; });
 
+var value;
+console.log(value);
 var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([0, 0])
   .html(function(d) {
+    value = d.data.label + ": <span style='color:orangered'> " + d.data.score + "</span>";
+    d3.selectAll("svg text").html(d.data.label+ ":" + d.data.score );
     return d.data.label + ": <span style='color:orangered'> " + d.data.score + "</span>";
   });
 
@@ -42,7 +43,7 @@ var svg = d3.select("#myChart").append("svg")
 
 
 d3.csv('experience.csv', function(error, data) {
-  console.log("data")
+  console.log("data");
 	console.log(data);
 
 	console.log(error);
@@ -83,11 +84,11 @@ d3.csv('experience.csv', function(error, data) {
     "hello";
 
   svg.append("svg:text")
-    .attr("class", "title")
+    .attr("class", "score")
     .attr("dy", ".35em")
     .attr("fill", "black")
     .attr("text-anchor", "middle") // text-align: right
-    .text("skills");
+    .text(value);
 
 });
 

@@ -1,140 +1,162 @@
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
 
-*{
+
+$white: #fff;
+$font-color: #000;
+
+
+* {
   margin: 0;
   padding: 0;
 }
 
+
 body {
-	margin: 0px;
-	font-family: 'Roboto', sans-serif;
-	background-color: #F5F3F3;
-  background-image: url("/assets/hexagon_bottom.svg");
+  background-color: #f5f3f3;
+  background-image: url('/assets/hexagon_bottom.svg');
   background-position: 100% 100%;
+  background-repeat: no-repeat;
   background-size: contain;
-  background-repeat:no-repeat;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
 };
 
 
+#hero {	
+  @include vendor-prefix(display, flex);
+  @include vendor-prefix(flex-direction, column);
+  @include vendor-prefix(justify-content, space-between);
+  @include vendor-prefix(align-items, center);
 
-
-#hero{	
- 	background-image: url("/assets/hexagon_top.svg");
- 	// background-attachment: fixed;
+  background-image: url('/assets/hexagon_top.svg');
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  & #name{
-    text-align: center;
-  	font-size: 150px;
-  	color: #FFF;
-    margin-top: 200px;
+
+    #name {
+      color: $white;
+      font-size: 150px;
+      margin-top: 200px;
+      text-align: center; 
   }
-   #arrow1{
+
+  #arrow1 {
     margin-bottom: 6em;
   }
 };
 
-.title{
-  font-size: 45px;
+
+.title {
+  color: $font-color;
   font-family: 'Raleway', sans-serif;
+  font-size: 45px;
   text-align: center;
-  color: #000;
-}
+};
 
 
-#columns{
- 	height: auto;
- 	background-color: #F0F0D4;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    align-items: center;
-    // -webkit-justify-content: center;
-    // justify-content: center;
-  & .title{
+#columns {
+  @include vendor-prefix(display, flex);
+  @include vendor-prefix(flex-direction, column);
+  @include vendor-prefix(align-items, center);
+
+  background-color: #F0F0D4;
+  height: auto;
+
+  .title {
     margin-top: 25px;
   }
-  & #aboutMe{
-    display: flex;
-    justify-content: center;
+
+  #aboutMe {
+    @include vendor-prefix(display, flex);
+    @include vendor-prefix(justify-content, center);
   }
- 	& .section{
+
+  .section {
+    color: $font-color;
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;    	
+    height: 60%;
+    margin: 0 80px;
     text-align: justify;
- 		color: #000;
- 		width: 80%;
- 		height: 60%;
- 		margin: 0 80px;
-    font-size: 1.5em;
+    width: 80%;
  		}
- 	& h1, p {
- 		display: inline;
- 	} #arrow2{
+
+  h1, 
+  p {
+
+    display: inline;
+ 	} 
+
+  #arrow2 {
     margin-top: 4em;
   }
 };
 
 
-#javascript{
- 	height: auto;
- 	display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  align-items: center;
-  & .title{
-    margin: 10px 0 20px 0;
+#javascript {
+  @include vendor-prefix(display, flex);
+  @include vendor-prefix(flex-direction, column);
+  @include vendor-prefix(align-items, center);
+
+  height: auto;
+
+  .title {
+    margin: 1em 0 1.5em;
   }
-  & #row1, #row2{
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+
+  #row1,
+  #row2 {
+    @include vendor-prefix(display, flex);
+    @include vendor-prefix(flex-direction, row);
+    @include vendor-prefix(justify-content, space-around);
   }
-  & .projectImg{
+
+  .project-img {
+    height: 224px;
+    margin: 15px 35px;
+    width: 395px;  
+  }
+
+  .screenshot {
     height: 225px;
     width: 395px;
-    margin: 15px 35px 15px 35px;
   }
-  & .screenshot{
-    height: 225px;
-    width: 395px;
-    // margin: 15px 35px 15px 35px;
-  }
-}
+};
 
 
-.info{
-  background-color: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  width: 375px;
+.info {
+  background-color: rgba(0, 0, 0, .4);
+  color: $white;
   height: 150px;
-  text-align: justify;
-  color: #fff;
-  position: absolute;
+  margin: -174px 0 0;
+  opacity: 0;
   padding: 10px;
-  margin: -174px 0px 0px 0px;
-  & h3{
+  position: absolute;
+  text-align: justify;
+  width: 375px;
+
+  h3 {
     margin: 0;
   }
-}
+};
 
 
-#arrow3, #arrow4, #arrow5{
+#arrow3, 
+#arrow4, 
+#arrow5, 
+#arrow6, 
+#arrow7 {
   display: none;
-  // margin: -80px auto 0 auto;
 }
 
-#arrow6{
+
+#arrow8 {
   display: block;
-  margin: 5em auto 2em auto;
+  margin: 5em auto 2em;
 }
 
 
@@ -153,118 +175,121 @@ form {
 axis path,
 .axis line {
   fill: none;
-  stroke: #fff;
   shape-rendering: crispEdges;
+  stroke: $white; 
 }
+
 
 .bar {
-  fill: orange;
+  fill: #ffa500;
 }
+
 
 .solidArc:hover {
-  fill: rgba(0, 0, 0, 0.5) ;
+  fill: rgba(0, 0, 0, .5);
 }
 
+
 .solidArc {
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+  @include vendor-prefix(transition, all .3s);
 }
+
 
 .x.axis path {
   display: none;
 }
 
+
 .aster-score { 
-  line-height: 1;
-  font-size: 150%;
   font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+  line-height: 1;
+  
 }
+
 
 .d3-tip {
-  line-height: 2;
-  font-size: 2em;
-  font-family: 'Raleway', sans-serif;
-  padding: 18px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background: rgba(0, 0, 0, .5);
   border-radius: 2px;
+  color: $white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  line-height: 2;
+  padding: 18px;
   z-index: 99;
-}
+  
+};
 
-/* Creates a small triangle extender for the tooltip */
+//* Creates a small triangle extender for the tooltip *//
 .d3-tip:after {
   box-sizing: border-box;
+  color: rgba(0, 0, 0, .5);
+  content: '\25BC';
   display: inline;
   font-size: 10px;
-  width: 100%;
   line-height: 1;
-  color: rgba(0, 0, 0, 0.5);
-  content: "\25BC";
   position: absolute;
   text-align: center;
+  width: 100%;
 }
 
-/* Style northward tooltips differently */
+//* Style northward tooltips differently *//
 .d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
   left: 0;
+  margin: -1px 0 0;
+  top: 100%;
 }
 
 
-#bottom{
+#bottom {   
+  @include vendor-prefix(display, flex);
+  @include vendor-prefix(flex-direction, column);
+  @include vendor-prefix(align-items, center);
+  @include vendor-prefix(justify-content, center);
+
   margin-top: 50px;
-  display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
 };
 
 
-#footer{
+#footer {
+  @include vendor-prefix(display, flex);
+  @include vendor-prefix(flex-direction, row);
+  @include vendor-prefix(justify-content, space-around);
+  
+  height: 20%;
   margin-bottom: 3%;
   width: 80%;
- 	height: 20%;
-    display: flex;
-    -webkit-display: flex;
-    -webkit-flex-direction: row;
-   flex-direction: row;
-    justify-content: space-around;
-    -webkit-justify-content: space-around;
-  & #footer > a{
+
+  #footer > a {
     display: none;
   }
- 	& #contact{
- 		width: 80%;
- 		border-top: solid 1px #fff;
-    display: flex;
-    -webkit-display: flex;
-    justify-content: space-around;
-    webkit-justify-content: space-around;
-    -webkit-align-items: center;
-    align-items: center;
-    font-size: 1.3em;
 
- 	} & div{
+ 	#contact {		
+  @include vendor-prefix(display, flex);
+  @include vendor-prefix(justify-content, space-around);
+  @include vendor-prefix(align-items, center);
+
+  border-top: solid 1px $white;
+  font-size: 1.3em;
+  width: 80%;   
+
+ 	}
+
+  div {
     margin-top: 3%;
   }
 
-  & a:link {
-    color: #fff;
+  a:link {
+    color: $white;
     text-decoration: none;
 }
 
-  & a:visited {
-      color: #fff;
-      text-decoration: none;
+  a:visited {
+    color: $white;
+    text-decoration: none;
   }
- };
+
+};
 
 
 
