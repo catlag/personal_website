@@ -1,9 +1,12 @@
 var width = 550;
 var height = 550;
 
+var mobile =false;
+
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   width = 300;
   height = 300;
+  mobile = true;
 }
 
 var radius = Math.min(width, height) / 2;
@@ -20,7 +23,8 @@ var tip = d3.tip()
   .offset([0, 0])
   .html(function(d) {
     value = d.data.label + ": <span style='color:orangered'> " + d.data.score + "</span>";
-    d3.selectAll("svg text").html(d.data.label+ ":" + d.data.score );
+    if(mobile){d3.selectAll("svg text").text(d.data.label+": " + d.data.score );
+}
     return d.data.label + ": <span style='color:orangered'> " + d.data.score + "</span>";
   });
 
@@ -88,7 +92,7 @@ d3.csv('experience.csv', function(error, data) {
     .attr("dy", ".35em")
     .attr("fill", "black")
     .attr("text-anchor", "middle") // text-align: right
-    .text(value);
+    .text("skills");
 
 });
 

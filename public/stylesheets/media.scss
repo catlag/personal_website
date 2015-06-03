@@ -18,13 +18,13 @@
 
   body {
 
-    // @include vendor-prefix(display, flex);
-    // @include vendor-prefix(flex-direction, column);
-    // background-color: #F5F3F3;
-    // background-image: none;  
-    // // background-position: 100% 100%;
-    // // background-repeat: no-repeat;
-    // // background-size: contain;
+    @include vendor-prefix(display, flex);
+    @include vendor-prefix(flex-direction, column);
+    background-color: #F5F3F3;
+    background-image: url('/assets/hexagon_bottom.png');  
+    background-position:center bottom;
+    background-origin: border-box;
+    // background-size: cover;
     font-family: 'Roboto', sans-serif;
  };
 	
@@ -62,6 +62,13 @@
     font-size: 250%;
 	}
 
+  .arrow {
+    height: 10%;
+    width: auto;
+    display: block;
+    margin: -15% auto;
+  }
+
   #columns {
     @include vendor-prefix(display, flex);
     @include vendor-prefix(flex-direction, column);
@@ -86,7 +93,8 @@
 
 	#javascript {
 		.title {
-      margin-top: 3%;
+      background-color: purple;
+      margin-top: 3% auto;
   	}
 
 		#row1, 
@@ -103,12 +111,16 @@
 	  .project-img {
       @include vendor-prefix(display, flex);
       @include vendor-prefix(flex-direction, column);
-      @include vendor-prefix(align-items, space-around);
+      @include vendor-prefix(align-items, space-between);
       margin: 0 auto;
       height: auto;
       padding-top: 4%;
       width: 100%;   
   	}
+
+    #tictactoe {
+      margin-top: -10%;
+    }
 
     .screenshot {
       height: auto; 
@@ -117,7 +129,8 @@
     }
 
 	 	.info {
-		  background-color: transparent;
+		  background-color: red;
+      display: block;
 		  color: #000;
       font-size: 90%;
       height: auto;
@@ -139,38 +152,44 @@
     width: 15%;
   }
 
-
-	#arrow3, 
+  #arrow3, 
   #arrow4, 
   #arrow5,
   #arrow6,
   #arrow7 {
-		display: inline;
+    background-color: blue;
+    display: block;
+    margin: 20% auto 0;
+    
+    // margin: 10% auto;
   }
-	
-	#arrow6 {
+
+	#arrow8 {
+    background-color: blue;
+    display: block;
 		margin-top: -40%;
 	}
 
-  .arrow {
-    height: 20%;
-    width: auto;
-    display: block;
-    margin: -15% auto;
-  }
 
   .aster-score { 
-    font-size: 50%;
+    font-size: 60%;
 	}
+
+  .score {
+    width: 10px;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+  }
 
  .d3-tip {
   background: rgba(0, 0, 0, .5);
   border-radius: 2px;
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: .5em;
+  font-size: 1em;
   line-height: 1;
-  padding: 2px;
+  padding: 8px;
   z-index: 99;
   
 };
@@ -191,30 +210,49 @@
 	#bottom {
     @include vendor-prefix(display, flex);
     @include vendor-prefix(flex-direction, column);
-    @include vendor-prefix(align-items, center);
+    // @include vendor-prefix(align-items, center);
     @include vendor-prefix(justify-content, center);
 
-    margin-top: 2em; 
+    // margin-top: 40%; 
   }
 
 
   #footer {
 
-
     @include vendor-prefix(display, flex);
+    @include vendor-prefix(flex-direction, row);
     @include vendor-prefix(justify-content, center);
-    height: 20%;
-    margin-top: 20px;
+
+    height: 10%;
+    margin-top: 10%;
+    // margin: 0 auto;
+    background-color: blue;
    	
     #contact {
 
-      @include vendor-prefix(display, flex);
-      @include vendor-prefix(justify-content, space-around);
+      @include vendor-prefix(display,flex);
+      @include vendor-prefix(flex-direction, row);
+      @include vendor-prefix(justify-content, center);
 
       border-top: solid 1px #fff;
-      // width: 800px;
+      background-color: purple;
+      margin: 0 auto;
+
    	}
+
+    div {
+      background-color: pink;
+      padding: 0;
+      margin: 0 5%;
+    }
+
+    img {
+      display: block;
+    
   }
+
+  }
+
 
 };
 

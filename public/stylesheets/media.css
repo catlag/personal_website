@@ -6,6 +6,20 @@
     padding: 0; }
 
   body {
+    -webkit-display: flex;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    background-color: #F5F3F3;
+    background-image: url("/assets/hexagon_bottom.png");
+    background-position: center bottom;
+    background-origin: border-box;
     font-family: 'Roboto', sans-serif; }
 
   #hero {
@@ -43,6 +57,12 @@
 
   .title {
     font-size: 250%; }
+
+  .arrow {
+    height: 10%;
+    width: auto;
+    display: block;
+    margin: -15% auto; }
 
   #columns {
     -webkit-display: flex;
@@ -83,7 +103,8 @@
       margin: 0 auto; }
 
   #javascript .title {
-    margin-top: 3%; }
+    background-color: purple;
+    margin-top: 3% auto; }
   #javascript #row1,
   #javascript #row2 {
     -webkit-display: flex;
@@ -113,21 +134,24 @@
     -moz-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: space-around;
-    -ms-align-items: space-around;
-    -moz-align-items: space-around;
-    -o-align-items: space-around;
-    align-items: space-around;
+    -webkit-align-items: space-between;
+    -ms-align-items: space-between;
+    -moz-align-items: space-between;
+    -o-align-items: space-between;
+    align-items: space-between;
     margin: 0 auto;
     height: auto;
     padding-top: 4%;
     width: 100%; }
+  #javascript #tictactoe {
+    margin-top: -10%; }
   #javascript .screenshot {
     height: auto;
     width: 100%;
     margin: 0 auto; }
   #javascript .info {
-    background-color: transparent;
+    background-color: red;
+    display: block;
     color: #000;
     font-size: 90%;
     height: auto;
@@ -148,28 +172,32 @@
   #arrow5,
   #arrow6,
   #arrow7 {
-    display: inline; }
+    background-color: blue;
+    display: block;
+    margin: 20% auto 0; }
 
-  #arrow6 {
+  #arrow8 {
+    background-color: blue;
+    display: block;
     margin-top: -40%; }
 
-  .arrow {
-    height: 20%;
-    width: auto;
-    display: block;
-    margin: -15% auto; }
-
   .aster-score {
-    font-size: 50%; }
+    font-size: 60%; }
+
+  .score {
+    width: 10px;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em; }
 
   .d3-tip {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 2px;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: .5em;
+    font-size: 1em;
     line-height: 1;
-    padding: 2px;
+    padding: 8px;
     z-index: 99; }
 
   .d3-tip:after {
@@ -194,17 +222,11 @@
     -moz-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    -moz-align-items: center;
-    -o-align-items: center;
-    align-items: center;
     -webkit-justify-content: center;
     -ms-justify-content: center;
     -moz-justify-content: center;
     -o-justify-content: center;
-    justify-content: center;
-    margin-top: 2em; }
+    justify-content: center; }
 
   #footer {
     -webkit-display: flex;
@@ -212,24 +234,43 @@
     -moz-display: flex;
     -o-display: flex;
     display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
     -webkit-justify-content: center;
     -ms-justify-content: center;
     -moz-justify-content: center;
     -o-justify-content: center;
     justify-content: center;
-    height: 20%;
-    margin-top: 20px; }
+    height: 10%;
+    margin-top: 10%;
+    background-color: blue; }
     #footer #contact {
       -webkit-display: flex;
       -ms-display: flex;
       -moz-display: flex;
       -o-display: flex;
       display: flex;
-      -webkit-justify-content: space-around;
-      -ms-justify-content: space-around;
-      -moz-justify-content: space-around;
-      -o-justify-content: space-around;
-      justify-content: space-around;
-      border-top: solid 1px #fff; } }
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row;
+      -o-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: center;
+      -ms-justify-content: center;
+      -moz-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      border-top: solid 1px #fff;
+      background-color: purple;
+      margin: 0 auto; }
+    #footer div {
+      background-color: pink;
+      padding: 0;
+      margin: 0 5%; }
+    #footer img {
+      display: block; } }
 
 /*# sourceMappingURL=media.css.map */

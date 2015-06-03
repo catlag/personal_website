@@ -15,10 +15,7 @@ $(document).ready(function(){
   $('#hero').css("top", "0px");
   $('#hero').css("left", "0px");
 	$('#columns').css("height", winY);
-  $( "#contact img" ).each( function() {
-        var $img = $( this );
-        $img.width( winX *.03);
-      });
+
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $('.project-img').css("height", winY);
@@ -27,8 +24,16 @@ $(document).ready(function(){
 
     $('.github').attr("src", "/assets/github_black.svg");
     $('#phone > a ').html('<img src="/assets/phone.svg">');
+      $( "#contact img" ).each( function() {
+        var $img = $( this );
+        $img.width( winX *.1);
+      });
   } else{
       $('#javascript').css("height", winY);
+        $( "#contact img" ).each( function() {
+        var $img = $( this );
+        $img.width( winX *.06);
+      });
       
     }
 
