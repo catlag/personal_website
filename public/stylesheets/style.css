@@ -111,7 +111,7 @@ body {
   align-items: center;
   height: auto; }
   #javascript .title {
-    margin: 1em 0 1.5em; }
+    margin-top: 0.5em; }
   #javascript #row1,
   #javascript #row2 {
     -webkit-display: flex;
@@ -132,10 +132,10 @@ body {
   #javascript .project-img {
     height: 224px;
     margin: 15px 35px;
-    width: 395px; }
+    width: 360px; }
   #javascript .screenshot {
     height: 225px;
-    width: 395px; }
+    width: 360px; }
 
 .info {
   background-color: rgba(0, 0, 0, 0.4);
@@ -146,7 +146,7 @@ body {
   padding: 10px;
   position: absolute;
   text-align: justify;
-  width: 375px; }
+  width: 340px; }
   .info h3 {
     margin: 0; }
 

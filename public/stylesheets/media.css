@@ -102,9 +102,6 @@
       font-size: .8em;
       margin: 0 auto; }
 
-  #javascript .title {
-    background-color: purple;
-    margin-top: 3% auto; }
   #javascript #row1,
   #javascript #row2 {
     -webkit-display: flex;
@@ -144,13 +141,13 @@
     padding-top: 4%;
     width: 100%; }
   #javascript #tictactoe {
-    margin-top: -10%; }
+    margin-top: -20%; }
   #javascript .screenshot {
     height: auto;
     width: 100%;
     margin: 0 auto; }
   #javascript .info {
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0);
     display: block;
     color: #000;
     font-size: 90%;
@@ -172,14 +169,13 @@
   #arrow5,
   #arrow6,
   #arrow7 {
-    background-color: blue;
     display: block;
     margin: 20% auto 0; }
 
   #arrow8 {
-    background-color: blue;
     display: block;
-    margin-top: -40%; }
+    position: relative;
+    top: -10em; }
 
   .aster-score {
     font-size: 60%; }
@@ -228,6 +224,10 @@
     -o-justify-content: center;
     justify-content: center; }
 
+  svg {
+    display: block;
+    margin: 0 auto; }
+
   #footer {
     -webkit-display: flex;
     -ms-display: flex;
@@ -246,7 +246,7 @@
     justify-content: center;
     height: 10%;
     margin-top: 10%;
-    background-color: blue; }
+    margin: 0 auto; }
     #footer #contact {
       -webkit-display: flex;
       -ms-display: flex;
@@ -264,13 +264,11 @@
       -o-justify-content: center;
       justify-content: center;
       border-top: solid 1px #fff;
-      background-color: purple;
       margin: 0 auto; }
     #footer div {
-      background-color: pink;
-      padding: 0;
-      margin: 0 5%; }
+      padding: 0; }
     #footer img {
-      display: block; } }
+      display: block;
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=media.css.map */

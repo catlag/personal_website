@@ -93,8 +93,7 @@
 
 	#javascript {
 		.title {
-      background-color: purple;
-      margin-top: 3% auto;
+      
   	}
 
 		#row1, 
@@ -119,7 +118,7 @@
   	}
 
     #tictactoe {
-      margin-top: -10%;
+      margin-top: -20%;
     }
 
     .screenshot {
@@ -129,7 +128,7 @@
     }
 
 	 	.info {
-		  background-color: red;
+      background-color: rgba(255,255,255,0);
       display: block;
 		  color: #000;
       font-size: 90%;
@@ -157,7 +156,6 @@
   #arrow5,
   #arrow6,
   #arrow7 {
-    background-color: blue;
     display: block;
     margin: 20% auto 0;
     
@@ -165,9 +163,10 @@
   }
 
 	#arrow8 {
-    background-color: blue;
     display: block;
-		margin-top: -40%;
+    position: relative;
+    top: -10em;
+		// margin-top: -40%;
 	}
 
 
@@ -207,15 +206,18 @@
     width: 100%;
 	}
 
+
 	#bottom {
     @include vendor-prefix(display, flex);
     @include vendor-prefix(flex-direction, column);
     // @include vendor-prefix(align-items, center);
     @include vendor-prefix(justify-content, center);
-
-    // margin-top: 40%; 
   }
-
+  
+svg {
+  display: block;
+  margin: 0 auto;
+}
 
   #footer {
 
@@ -225,8 +227,7 @@
 
     height: 10%;
     margin-top: 10%;
-    // margin: 0 auto;
-    background-color: blue;
+    margin: 0 auto;
    	
     #contact {
 
@@ -235,19 +236,19 @@
       @include vendor-prefix(justify-content, center);
 
       border-top: solid 1px #fff;
-      background-color: purple;
       margin: 0 auto;
 
    	}
 
     div {
-      background-color: pink;
+
       padding: 0;
-      margin: 0 5%;
+      // margin: 0 5%;
     }
 
     img {
       display: block;
+      margin: 0 auto;
     
   }
 
