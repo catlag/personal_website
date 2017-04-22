@@ -219,7 +219,8 @@ form {
 #footer {
   height: auto;
   margin-bottom: 3%;
-  width: 80%; }
+  width: 80%;
+  margin: auto; }
   #footer #footer > a {
     display: none; }
   #footer #contact {
