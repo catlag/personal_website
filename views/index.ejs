@@ -8,11 +8,10 @@
 
 	<script async type="text/javascript" src="js/script.js"></script>
 
-
-
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/media.css">
@@ -21,18 +20,20 @@
 <body onunload="">
 	
 	<div id="hero">
-
-		<p id="name">Linda Martinez</p>
-		<div id="arrow1">
-			<img class="arrow" src="/assets/arrow.svg" alt="arrow">
-		</div>
-		
+		<div class="border-rectangle" id="main-border-rec">
+			<p id="name">Linda Martinez</p>
+			<div id="menu">
+				<a class="menu-links" name="columns">about</a>
+				<a class="menu-links" name="background">projects</a>
+				<a class="menu-links" name="bottom">contact</a>
+			</div>
+		</div>	
 	</div>
-	<div id="columns">
+	<div id="columns" name="about">
 		<div class="title">
 			<p>About Me</p>
 		</div>
-		<div id="aboutMe">
+		<div id="about-me">
 			<div class="section">
 				<p>I am originally from south Texas and hold a bachelors in psychology from the University of Texas at Brownsville. Following my graduation this past June I decided to make the big leap and moved to San Francisco! In December graduated from General Assembly's Web Development Immersive bootcamp where I learned to build a full-stack web applications. The 12 week intensive course helped me become adept at back-end web development as well as front-end web development by teaching the fundamentals of coding. 
 				<br>
@@ -42,110 +43,88 @@
 			</div>
 		
 		</div>
-		<div id="arrow2">
-			<img class="arrow"src="/assets/arrow_black.svg" alt="arrow">
-		</div>
 	</div>
-	<div id="background">
+	<div id="background" >
 		<div id="javascript">
 			<p class="title">Projects</p>
 			
-			<div id="row1">
-				<div class="project-img" id="tictactoe">
-					<a href="https://three-in-a-row.herokuapp.com"><img class="screenshot" src="https://i.imgur.com/DF8NTmJ.png" alt="tictactoe"></a>
+			<div id="projects">
+				<div class="project">
+					<div class="project-img right" id="tictactoe">
+						<a href="https://three-in-a-row.herokuapp.com"><img class="screenshot" src="https://i.imgur.com/DF8NTmJ.png" alt="tictactoe"></a>
+					</div>
 					<div class="info" id="tictacInfo">
-						<h3>Tic Tac Toe &nbsp;&nbsp;<a href="https://github.com/catlag/tictactoe"><img class="github" src="/assets/github.svg" alt="github"></a></h3>					
-						<p>
-					 	A fun tic tac toe game!
-						<br><br>HTML&nbsp;&nbsp; JavaScript&nbsp;&nbsp; CSS</p>
-					</div>
-					<div id="arrow3">
-						<img  class="arrow" src="/assets/arrow_black.svg" alt="arrow">
+							<h2>Tic Tac Toe</h2>					
+							<p>
+						 	A fun tic tac toe game!
+							<br><br>HTML&nbsp;&nbsp; JavaScript&nbsp;&nbsp; CSS</p>
+							<a href="https://github.com/catlag/tictactoe"><img class="github" src="/assets/github_black.svg" alt="github"></a>
+
 					</div>
 				</div>
 
-				<div class="project-img" id="todo">
-					<a href="http://geologist-carl-83438.bitballoon.com/"><img class="screenshot" src="https://i.imgur.com/tv4MLQx.png" alt="todo"></a>
-					<div class="info" id="todoinfo">
-						<h3>ToDo &nbsp;&nbsp;<a href="https://github.com/catlag/todo"><img class="github" src="/assets/github.svg" alt="github"></a></h3>
+				<div class="project">
+					<div class="info right" id="todoinfo">
+						<h2>ToDo</h2>
 						<p >A neat mobile-first todo app made with Angular!<br><br>HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; Bootstrap&nbsp;&nbsp; Angular&nbsp;&nbsp; JqueryUI&nbsp;&nbsp; JavaScript</p>
-						
+						<a href="https://github.com/catlag/todo"><img class="github" src="/assets/github_black.svg" alt="github"></a>
 					</div>
-					<div id="arrow4">
-						<img  class="arrow" src="/assets/arrow_black.svg" alt="arrow">
+					<div class="project-img" id="todo">
+						<a href="http://geologist-carl-83438.bitballoon.com/"><img class="screenshot" src="https://i.imgur.com/tv4MLQx.png" alt="todo"></a>
 					</div>
 				</div>
 
-
-				<div class="project-img" id="grubber">
-					<a href="https://lm-grubber.herokuapp.com/"><img class="screenshot" src="https://i.imgur.com/9i7udPy.png" alt="grubber"></a>
+				<div class="project">
+					<div class="project-img right" id="grubber">
+						<a href="https://lm-grubber.herokuapp.com/"><img class="screenshot" src="http://i.imgur.com/518wbrX.png?1" alt="grubber"></a>
+					</div>
 					<div class="info" id="grubberInfo">
-						<h3>Grubber&nbsp;&nbsp;<a href="https://github.com/catlag/project_1"><img class="github" src="/assets/github.svg" alt="github">
-						</a></h3>
+						<h2>Grubber</h2>
 						<p >A recipe search app that allows users to search for stores and farmer's markets in their area<br><br>HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; PureCSS&nbsp;&nbsp; JavaScript&nbsp;&nbsp; NodeJs&nbsp;&nbsp; Express&nbsp;&nbsp; Yummly Api&nbsp;&nbsp; Google Maps Api&nbsp;&nbsp; MapQuest Api</p>
+						<a href="https://github.com/catlag/project_1"><img class="github" src="/assets/github_black.svg" alt="github">
+						</a>
 						
 					</div>
-					<div id="arrow5">
-							<img  class="arrow" src="/assets/arrow_black.svg" alt="arrow">
-					</div>
 				</div>
-				
 			</div>
 
 
 
 
-			<div id="row2">
-				<div class="project-img" id="sketchphrase">
-					<a href="https://sketchphrase.herokuapp.com/"><img class="screenshot" src="https://i.imgur.com/oEcQR13.png" alt="sketchphrase"></a>
-					<div class="info" id="sketchInfo">
-						<h3>SketchPhrase &nbsp;&nbsp;<a href="https://github.com/catlag/SketchPhraseV1"><img class="github" src="/assets/github.svg" alt="github"></a></h3>
-						<p >A cross between Pictionary and telephone games<br><br>HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; Bootstrap&nbsp;&nbsp; JavaScript&nbsp;&nbsp; Ruby on Rails&nbsp;&nbsp; Facebook Api&nbsp;&nbsp; PaperJs</p>
-						
+			<div id="projects">
+				<div class="project">
+					<div class="info right" id="sketchInfo">
+							<h2>SketchPhrase</h2>
+							<p >A cross between Pictionary and telephone games<br><br>HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; Bootstrap&nbsp;&nbsp; JavaScript&nbsp;&nbsp; Ruby on Rails&nbsp;&nbsp; Facebook Api&nbsp;&nbsp; PaperJs</p>
+							<a href="https://github.com/catlag/SketchPhraseV1"><img class="github" src="/assets/github_black.svg" alt="github"></a>
 					</div>
-					<div id="arrow6">
-						<img  class="arrow" src="/assets/arrow_black.svg" alt="arrow">
+					<div class="project-img" id="sketchphrase">
+						<a href="https://sketchphrase.herokuapp.com/"><img class="screenshot" src="https://i.imgur.com/oEcQR13.png" alt="sketchphrase"></a>
 					</div>
 				</div>
 
-			<div class="project-img" id="astronomy">
-					<a href="https://broker-fox-26504.bitballoon.com/"><img class="screenshot" src="https://i.imgur.com/bnFbH1d.jpg" alt="astronomy"></a>
+				<div class="project">
+					<div class="project-img right" id="astronomy">
+						<a href="https://broker-fox-26504.bitballoon.com/"><img class="screenshot" src="https://i.imgur.com/bnFbH1d.jpg" alt="astronomy"></a>
+					</div>
 					<div class="info" id="astronomyInfo">
-						<h3>Astronomy &nbsp;&nbsp;<a href="https://github.com/catlag/astronomy"><img class="github" src="/assets/github.svg" alt="github"></a></h3>
-						<p >Cute website I made about my favorite hobby<br><br>HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; Javascript&nbsp;&nbsp; YouTube Api</p>
-						
-					</div>
-
-						<div id="arrow7">
-							<img  class="arrow" src="/assets/arrow_black.svg" alt="arrow">
-						</div>
-				</div>
-
-				<div class="project-img" id="adventure">
-					<a href="https://adventure-share.herokuapp.com/"><img class="screenshot" src="https://i.imgur.com/Oo6AYQ2.jpg" alt="adventureshare"></a>
-					<div class="info" id="adventureInfo">
-						<h3>Adventure Share &nbsp;&nbsp;<a href="https://github.com/catlag/adventure_share"><img class="github" src="/assets/github.svg" alt="github"></a></h3>
-						<p >Long distance ride share app<br><br>HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; JavaScript&nbsp;&nbsp; Ruby on Rails&nbsp;&nbsp; Google Maps Api</p>
-						
+							<h2>Astronomy</h2>
+							<p >Cute website I made about my favorite hobby<br><br>HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; Javascript&nbsp;&nbsp; YouTube Api</p>
+							<a href="https://github.com/catlag/astronomy"><img class="github" src="/assets/github_black.svg" alt="github"></a>
 					</div>
 				</div>
 			</div>
-				<div id="arrow8">
-					<img class="arrow"src="/assets/arrow_black.svg" alt="arrow">
-				</div>
 		</div>
 
 
 		<div id="bottom">
-				<div id="myChart">		
-						</div>
 			<div id="footer">
 				<div id="contact">
 					<div id="linkedin">
 						<a class="icons" href="https://www.linkedin.com/in/lindamtz"><img src="/assets/linkedin_2.svg" alt="linkedin"></a>	
 					</div>
 					<div id="github">
-					<a class="icons" href="https://github.com/catlag"><img  src="/assets/github.svg" alt="github"></a>
+					<a class="icons" href="https://github.com/catlag"><img  src="/assets/github_black.svg" alt="github"></a>
 						
 					</div>
 					<div id="email"> 
@@ -160,19 +139,5 @@
 			</div>
 		</div>	
 	</div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-63327055-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-	<script src="js/d3.min.js"></script>
-	<script src="js/d3.tip.js"></script>
-  <script type="text/javascript" src="js/experience-chart.js"></script>
 </body>
 </html>
